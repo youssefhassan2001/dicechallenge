@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameSignup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#009688">
+
+        <ImageView
+            android:id="@+id/userblack"
+            android:layout_width="293dp"
+            android:layout_height="206dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="73dp"
+            android:clickable="true"
+            android:contentDescription="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            android:src="@drawable/s1" />
+
+        <EditText
+            android:id="@+id/edname"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="291dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="132dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginBottom="240dp"
+            android:background="#673AB7"
+            android:text="Start" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigatoin"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jo.dicechallenge.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gameSignup"
+            app:destination="@id/gameSignup" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameSignup"
+        android:name="com.jo.dicechallenge.GameSignup"
+        android:label="fragment_game_signup"
+        tools:layout="@layout/fragment_game_signup" >
+        <action
+            android:id="@+id/action_gameSignup_to_game"
+            app:destination="@id/game" />
+        <action
+            android:id="@+id/action_gameSignup_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game"
+        android:name="com.jo.dicechallenge.Game"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_game_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
